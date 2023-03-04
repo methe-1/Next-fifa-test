@@ -14,9 +14,23 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
-    }
+      "@/*": ["./src/*"],
+      "~components/*": ["./src/frontend/components/*"],
+      "~lib/*": ["lib/*"],
+      "~frontend/*": ["./src/frontend/*"],
+      "~styles/*": ["styles/*"],
+      "~hooks/*": ["hooks/*"],
+      "~api/*": ["api/*"],
+      "~icons/*": ["./src/frontend/icons/*"],
+      "~utils/*": ["./src/frontend/utils/*"],
+      "@types/*": ["@types/*"],
+      "~store/*": ["store/*"],
+      "~store": ["store/index"],
+      "~config/*": ["config/*"],
+      "~db/*": ["lib/Firebase/*"]
+    },
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
